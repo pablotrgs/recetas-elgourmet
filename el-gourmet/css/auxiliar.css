@@ -1,0 +1,155 @@
+/*FORMULARIOS */
+
+form {
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin: auto;
+  border: solid 2px;
+  padding: .2em;
+  background-color: #F4B97F;
+  text-align: center;
+}
+
+form>label {
+  float: left;
+}
+
+form[class="receta-form"]>input:first-of-type {
+  width: 95%;
+  max-width: 400px;
+  height: 20px;
+}
+
+form[class="receta-form"]>textarea {
+  width: 95%;
+  max-width: 400px;
+  height: 100px;
+}
+
+form[class="receta-form"]>span {
+  left: 40px;
+  position: absolute;
+}
+
+form[class="buscar-form"]>label {
+  display: block;
+  text-align: right;
+  width: 120px;
+}
+
+form[class="buscar-form"]>input:not[type="submit"] {
+  position: relative;
+  min-width: 180px;
+  max-width: 320px;
+  width: 40%;
+  display: block;
+  padding: .2em;
+  left: 10px;
+}
+
+img[class="miniatura-receta"] {
+  padding: 0;
+  margin: .3em;
+  display: block;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 95%;
+  height: auto;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input[type="submit"] {
+  width: 50%;
+  max-width: 300px;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+  padding: .5em;
+  margin: .3em;
+  background-color: #FF6A29;
+}
+
+#reset {
+  width: 50%;
+  max-width: 300px;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+  padding: .5em;
+  margin: .3em;
+  background-color: #FF6A29;
+}
+
+/*Mover al media*/
+
+input[type="submit"]:hover {
+  background-color: #F78D59;
+  color: #fff;
+}
+
+/*ADAPTACION*/
+
+/*Mover a media*/
+
+form>input:hover {
+  background-color: #F74403;
+  color: white;
+  transition: all 0.5s forwards;
+}
+
+form>input:focus {
+  background-color: #F78803;
+  color: white;
+}
+
+textarea:hover {
+  background-color: #F74403;
+  color: white;
+  transition: all 0.5s forwards;
+}
+
+textarea:focus {
+  background-color: #F78803;
+  color: white;
+}
+
+@media all and (min-width:480px) {
+  /*FORMULARIO*/
+  form {
+    justify-content: center;
+    text-align: center;
+  }
+  form[class="buscar-form"]>label {
+    margin: 0 auto;
+    padding: 0 auto;
+    display: inline-block;
+    float: none;
+  }
+  form[class="buscar-form"]>input:not[type="submit"] {
+    margin: 0 auto;
+    padding: 0 auto;
+    display: inline-block;
+  }
+  input[type="submit"] {
+    display: inline-block;
+  }
+  img[class="miniatura-receta"] {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+  form[class="receta-form"]>span {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+  }
+  form[class="receta-form"]>span {
+    left: 0;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}

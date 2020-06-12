@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Nueva receta | el Gourmet</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="fontello/css/fontello.css">
+  <link rel="stylesheet" href="css/auxiliar.css">
+  <meta name="tipo_contenido"  content="text/html;">
+
+</head>
+
+<body>
+	<header>
+		<img style="width:120px;height:130px" src="./img/logo.png" alt="logo">
+		<div>
+			<h1>El Gourmet</h1>
+			<p>Comparte tus recetas con los amantes de la cocina para que puedan disfrutar de ellas y sepas lo que gustan entre la gente</p>
+		</div>
+		<input type="checkbox" id="ckb-menu">
+		<nav class="menu">
+			<ul>
+				<li><label for="ckb-menu">&equiv;</label></li>
+				<li><a class="icon-home" href="index.html">Inicio</a></li>
+				<li><a class="icon-search" href="buscar.html">Buscar</a></li>
+				<li><a class="icon-user" href="registro.html">Registro</a></li>
+        <li><a class="icon-login-1" href="login.html">Iniciar sesión</a></li>
+				<li><a class="icon-logout" href="logout.html">Cerrar sesión</a></li>
+        <li><a class="icon-book-open" href="nueva-receta.html">Nueva receta</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<h2 style="text-align: center;">Nueva receta</h2>
+	<form class="receta-form" method="POST">
+
+		<label for="Nombre-receta">Nombre de la receta:</label>
+		<input id="titulo-receta" type="text" required maxlength="200" />
+		<br>
+
+    <label for="comensales-buscar">Comensales:</label>
+    <input  type="number" min="1" max="20" id="comensales-buscar">
+    <br>
+
+    <label for="ingredientes-buscar">Tiempo en minutos: </label>
+		<input
+     type="number" min="5" max="310" id="ingredientes-buscar">
+		<br>
+
+    <label for="dificultad">Dificultad:</label>
+		<select name="dificultad">
+													<option value="baja">Baja</option>
+													<option value="media">Media </option>
+													<option value="alta">Alta</option>
+		</select>
+    <br>
+    <label for="texto-receta">Elaboración:</label>
+    <br>
+    <textarea id="texto-receta" cols="30" rows="10" required></textarea>
+    <br>
+    <label for="ingrediente" > Lista de ingredientes:</label>
+      <input name="ingrediente" type="text" id="myInput" placeholder="Ingrediente...">
+      <button  class="addBtn">Añadir</button>
+
+    <ul id="myUL">
+      <li>12 Huevos</li>
+      <li >3 Cebollas</li>
+      <li >1 Pepino</li>
+
+    </ul>
+    <label class="icon-picture" for="archivo-receta">Seleccionar imagen</label>
+
+    		<input id="archivo-receta" type="file">
+    		<br>
+    		<span class="icon-cancel" style=""></span>
+    		<img class="miniatura-receta" src="img/sushi.png" alt="">
+    		<textarea id="text1" cols="30" rows="10" required></textarea>
+    		<br>
+    		<label class="icon-picture" for="archivo-receta2">Seleccionar imagen</label>
+    		<input id="archivo-receta2" type="file">
+    		<br>
+    		<span class="icon-cancel" style=""></span>
+    		<img class="miniatura-receta" src="img/atun.png" alt="">
+    		<textarea id="text2" cols="30" rows="10" required></textarea>
+		<br><br>
+		<label for="submit-receta"></label>
+		<input id="submit-receta" type="submit" value="Confirmar">
+
+
+	</form>
+	<footer>
+		<nav>
+			<ul>
+				<li><time datetime="2017-02-18">&copy; 2018</time></li>
+				<li></li>
+				<li><a href="acerca.html">Saber más</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>

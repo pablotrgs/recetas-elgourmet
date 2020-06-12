@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Búsqueda | el Gourmet</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="fontello/css/fontello.css">
+	<link rel="stylesheet" href="css/auxiliar.css">
+  	<meta name="tipo_contenido"  content="text/html;">
+
+  	<script type="text/javascript" src="js/buscar.js"></script>
+</head>
+
+<body onload="buscar();return false;">
+	<header>
+		<img style="width:120px;height:130px" src="./img/logo.png" alt="logo">
+		<div>
+			<h1>El Gourmet</h1>
+			<p>Comparte tus recetas con los amantes de la cocina para que puedan disfrutar de ellas y sepas lo que gustan entre la gente</p>
+		</div>
+		<input type="checkbox" id="ckb-menu">
+		<nav class="menu">
+			<ul>
+				<li><label for="ckb-menu">&equiv;</label></li>
+				<li><a class="icon-home" href="index.html">Inicio</a></li>
+				<li><a class="icon-search" href="buscar.html">Buscar</a></li>
+				<li><a class="icon-user" href="registro.html">Registro</a></li>
+				<li><a class="icon-login-1" href="login.html">Iniciar sesión</a></li>
+				<li><a class="icon-logout" href="logout.html">Cerrar sesión</a></li>
+				<li><a class="icon-book-open" href="nueva-receta.html">Nueva receta</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h2 style="text-align: center;">Buscar</h2>
+	<form onsubmit="loadPagBusqueda(0,6,this);return false;" class="buscar-form" method="POST">
+
+		<label for="nombre-buscar">Nombre</label>
+		<input type="text" id="nombre-buscar">
+
+		<br>
+
+		<label for="ingredientes-buscar">Ingredientes</label>
+		<input type="text" id="ingredientes-buscar">
+		<br>
+
+		<label for="ingredientes-buscar">Tiempo </label>
+		<input type="number" min="5" max="310" id="ingredientes-buscar2"> minutos
+		<br>
+
+		<label for="dificultad">Dificultad</label>
+		<select name="dificultad" id="dificultad">
+			<option value="baja">Baja</option>
+			<option value="media">Media </option>
+			<option value="alta">Alta</option>
+		</select>
+		<br>
+
+		<label for="comensales-buscar">Comensales</label>
+		<input type="number" min="1" max="20" id="comensales-buscar">
+		<br>
+
+		<label for="autor-buscar">Autor</label>
+		<input type="text" id="autor-buscar">
+		<br>
+		<input type="submit" id="submit-buscar" value="Buscar">
+		<input type="reset" id="reset" name="Reset">
+
+	</form>
+
+	<h2 style="text-align: center;">Resultados</h2>
+
+	<section id="resulbusqueda">
+		<!--<article>
+			<img src="img/atun.png" alt="receta uno">
+			<p>
+				Esta receta es de una dificultad sencilla aunque parezca algo complicada, tiene unos ingredientes basicos que dan como resultado un sabroso plato y muy nutritivo
+				<a href="receta.html">Ver m&aacute;s </a>
+			</p>
+
+			<a href="receta.html">Atun a la marinera</a>
+			<br>
+			<a href="buscar.html"><address>Autor: Adrian Sanfelix</address> </a>
+			<footer>
+				<time datetime="2018-02-17">Fecha <br> 17/02/2018</time>
+				<p>Votos positivos<br> 7</p>
+				<p>Votos negativos<br> 3</p>
+				<p>Comentarios <br> 41</p>
+			</footer>
+		</article>-->
+	</section>
+	<footer>
+		<nav>
+			<ul>
+				<li><time datetime="2018-02-21">&copy; 2018</time></li>
+				<li></li>
+				<li><a href="acerca.html">Saber más</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>

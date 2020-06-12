@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login | el Gourmet</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="fontello/css/fontello.css">
+  <link rel="stylesheet" href="css/auxiliar.css">
+  <meta name="tipo_contenido"  content="text/html;">
+
+</head>
+
+<body>
+	<header>
+		<img style="width:120px;height:130px" src="./img/logo.png" alt="logo">
+		<div>
+			<h1>El Gourmet</h1>
+			<p>Comparte tus recetas con los amantes de la cocina para que puedan disfrutar de ellas y sepas lo que gustan entre la gente</p>
+		</div>
+		<input type="checkbox" id="ckb-menu">
+		<nav class="menu">
+			<ul>
+				<li><label for="ckb-menu">&equiv;</label></li>
+				<li><a class="icon-home" href="index.html">Inicio</a></li>
+				<li><a class="icon-search" href="buscar.html">Buscar</a></li>
+				<li><a class="icon-user" href="registro.html">Registro</a></li>
+        <li><a class="icon-login-1" href="login.html">Iniciar sesión</a></li>
+				<li><a class="icon-logout" href="logout.html">Cerrar sesión</a></li>
+        <li><a class="icon-book-open" href="nueva-receta.html">Nueva receta</a></li>
+			</ul>
+		</nav>
+	</header>
+	<form>
+		<fieldset>
+			<legend>Inicio de sesión</legend>
+
+			<label for="user">Usuario</label>
+			<input id="user" type="text" pattern="^[^0-9]{1}[\S*][a-zA-Z0-9]+$" autofocus required>
+
+			<label for="pass">Contrase&ntilde;a</label>
+			<input id="pass" type="password" required>
+
+
+			<input name="submit" type="Submit" value="Loguearse">
+
+			<a href="index.html">Cancelar</a>
+      <br>
+      <p> Aun no estas registrado?</p>
+      <a href="registro.html">Registrate!</a>
+
+		</fieldset>
+	</form>
+	<footer>
+		<nav>
+			<ul>
+				<li><time datetime="2017-02-21">&copy; 2017</time></li>
+				<li></li>
+				<li><a href="acerca.html">Saber m&aacute;s</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>

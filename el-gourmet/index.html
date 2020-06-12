@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Portada de el Gourmet</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="fontello/css/fontello.css">
+	<meta name="tipo_contenido"  content="text/html;">
+
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body onload="cargarIndex();return false;">
+	<header>
+		<img style="width:120px;height:130px" src="./img/logo.png" alt="logo">
+		<div>
+			<h1>El Gourmet</h1>
+			<p>Comparte tus recetas con los amantes de la cocina para que puedan disfrutar de ellas y sepas lo que gustan entre la gente</p>
+		</div>
+		<input type="checkbox" id="ckb-menu">
+		<!--<nav class="menu" id="menu">
+			<ul>
+				<li><label for="ckb-menu">&equiv;</label></li>
+				<li><a class="icon-home" id="inicio" href="index.html">Inicio</a></li>
+				<li><a class="icon-search" id="buscar" href="buscar.html">Buscar</a></li>
+				<li><a class="icon-user" id="registro" href="registro.html">Registro</a></li>
+				<li><a class="icon-login-1" id="iniciarsesion" href="login.html">Iniciar sesión</a></li>
+				<li><a class="icon-logout" id="cerrarsesion" href="logout.html">Cerrar sesión</a></li>
+				<li><a class="icon-book-open" id="nuevareceta" href="nueva-receta.html">Nueva receta</a></li>
+			</ul>
+		</nav>-->
+	</header>
+	<section>
+		<form id="buscar" action="buscar.html" method="get">
+			<label for="texto-buscar">Buscar</label>
+			<input type="text" id="texto-buscar" name="buscar">
+			<input type="submit" id="submit-buscar" value="Buscar">
+			<!--<label for="orden">ordenar por:</label>
+			<select name="orden">
+                <option value="V_A">Valoracion ascendente</option>
+                <option value="V_D">Valoracion descendente</option>
+                <option value="F_A">Fecha ascendente</option>
+                <option value="F_D">Fecha descendente</option>
+ 		 	</select> -->
+		</form>
+	</section>
+
+	<section id="ultimasEntradas">
+		<!--<article>
+			<img src="img/atun.png" alt="receta uno">
+			<p>
+				Esta receta es de una dificultad sencilla aunque parezca algo complicada, tiene unos ingredientes basicos que dan como resultado un sabroso plato y muy nutritivo
+				<a href="receta.html">Ver m&aacute;s </a>
+			</p>
+
+			<a href="receta.html">Atun a la marinera</a>
+			<br>
+			<a href="buscar.html"><address>Autor: Adrian Sanfelix</address> </a>
+			<footer>
+				<time datetime="2018-02-17">Fecha <br> 17/02/2018</time>
+				<p>Votos positivos<br> 7</p>
+				<p>Votos negativos<br> 3</p>
+				<p>Comentarios <br> 41</p>
+			</footer>
+		</article>-->
+	</section>
+
+	<nav id="pagination" class="pag">
+		<!--<ul>
+			<li><a>Previous</a></li>
+			<li><a>1</a></li>
+			<li><a>2</a></li>
+			<li><a>3</a></li>
+			<li><a>...</a></li>
+			<li><a>last</a></li>
+			<li><a>Next</a></li>
+
+		</ul>-->
+	</nav>
+
+	<footer>
+		<nav>
+			<ul>
+				<li><time datetime="2018-02-18">&copy; 2018</time></li>
+				<li></li>
+				<li><a href="acerca.html">Saber m&aacute;s</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>
